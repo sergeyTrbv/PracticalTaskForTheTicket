@@ -1,16 +1,16 @@
 public class Main {
 
-    public static int squareIt() {
-        int number = 3;
+    public static int squareIt(int number) {
         if (number != 0) {
             number = number * number;
             System.out.println(number);
         } else {
-            System.out.println("На НУЛЬ делить нельзя!!!");
+            System.out.println("Нет смысла возводить в квадрат Нуль!");
         }return number;
     }
 
     public static void main(String[] args) {
-        squareIt();
+        int number = 3;
+        squareIt(number);
     }
 }
